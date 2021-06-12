@@ -12,3 +12,4 @@
 ## Arrays 1
 
 1. [Sort an array of 0’s 1’s 2’s](012.swift)
+1. [Fine missing Number](missing.swift)
