@@ -1,5 +1,3 @@
-<img src="../../img/codemonk.png">
-
 # About
 
 * [Link](https://www.hackerearth.com/practice/codemonk/) 

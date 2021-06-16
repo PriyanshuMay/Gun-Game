@@ -1,5 +1,3 @@
-<img src="../../img/a2oj.png">
-
 # About
 
 * [Link](https://a2oj.com/)
