@@ -1,7 +1,7 @@
 title: CP Sheets
 author: ahampriyanshu
 description: Solving various CP/SDE sheets.
-theme: jekyll-theme-minimal
+theme: jekyll-theme-leap-day
 markdown: kramdown
 highlighter: rouge
 show_downloads: true
