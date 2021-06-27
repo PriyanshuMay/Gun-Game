@@ -5,6 +5,7 @@
 # Index
 
 - [Fundamentals](#Fundamentals)
+- [Arrays](#Arrays)
 
 ## Fundamentals
 
@@ -15,4 +16,12 @@
 1. [PrepBuddy and Socks](maxdraws.cpp)
 1. [Perfect Number and Divisors](prfctno.cpp)
 1. [Shopping Cost](shopcst.cpp)
+1. [Table Chair](tablechair.cpp)
 1. [Sorcerer Sequence](juggler.cpp)
+
+## Arrays
+
+1. [Smaller Greater Equal Numbers](smlgrtnum.cpp)
+1. [Quadrilateral](eqside.cpp)
+1. [Min and Max](minmax1.cpp)
+1. [No Mercy](nomercy.cpp)
