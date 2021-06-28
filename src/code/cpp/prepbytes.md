@@ -6,6 +6,11 @@
 
 - [Fundamentals](#Fundamentals)
 - [Arrays](#Arrays)
+- [Strings](#Strings)
+- [Recursion](#Recursion)
+- [Maths](#Maths)
+- [Searching](#Searching)
+- [Bit Manipulation](#Bit-Manipulation)
 
 ## Fundamentals
 
@@ -25,3 +30,27 @@
 1. [Quadrilateral](eqside.cpp)
 1. [Min and Max](minmax1.cpp)
 1. [No Mercy](nomercy.cpp)
+
+## Strings
+
+1. [Lovea](lovea.cpp)
+
+## Recursion
+
+1. [First Capital Using Recursion](frstcap.cpp)
+
+## Maths
+
+1. [Determine Prime](detprime.cpp)
+
+## Searching
+
+1. [Floor of a number](floor.cpp)
+
+## Sorting
+
+1. [Find the misplaced elements](replace.cpp)
+
+## Bit Manipulation
+
+1. [Alone Number](alone.cpp)
