@@ -11,6 +11,8 @@
 - [Maths](#Maths)
 - [Searching](#Searching)
 - [Bit Manipulation](#Bit-Manipulation)
+- [Linked List](#Linked-List)
+- [Stack](#Stack)
 
 ## Fundamentals
 
@@ -54,3 +56,11 @@
 ## Bit Manipulation
 
 1. [Alone Number](alone.cpp)
+
+## Linked List
+
+1. [Delete kth Node From End of List](delkthnfrend.cpp)
+
+## Stack
+
+1. [Get Minimum Element From Stack](getminelefst.cpp)
