@@ -4,10 +4,11 @@
 
 # Index
 
-- [Arrays 1](#Arrays-1)
-- [Arrays 2](#Arrays-2)
+- [1 Arrays](#1-Arrays)
+- [2 Arrays](#2-Arrays)
+- [3 Maths](#3-Maths)
 
-## Arrays 1
+## 1 Arrays
 
 1. [Sort an array of 0’s 1’s 2’s](012.cpp)
 1. [Find Missing And Repeating](find_missing_and_repeating.cpp)
@@ -16,7 +17,7 @@
 1. [Merge Intervals](merge_intervals.cpp)
 1. [Find duplicate in an array of N+1 integers.](array_duplicates.cpp)
 
-## Arrays 2
+## 2 Arrays
 
 1. [Set matrix zeros](set_matrix_zeroes.cpp)
 1. [Pascal triangle](pascal_triangle.cpp)
@@ -25,3 +26,9 @@
 1. [Stock buy and sell](buy_sell_stocks.cpp)
 1. [Rotate matrix Anticlockwise](rotate_matrix_anti_90.cpp)
 
+## 3 Maths
+
+1. [Search a 2D Matrix](search_2d_matrix.cpp)
+1. [Pow(x, n)](pow.cpp)
+1. [Majority Element I](majority_element.cpp)
+1. [Majority Element II](majority_element_2.cpp)
