@@ -18,12 +18,8 @@ public:
                     while(j < k && nums[k] == nums[k - 1]) k--;
                     j++,k--;
                 }
-                else if(sum > 0){
-                    k--;
-                }
-                else{
-                    j++;
-                }
+                else if(sum > 0) k--;
+                else j++;
             }
             
         }

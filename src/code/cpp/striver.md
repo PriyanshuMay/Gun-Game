@@ -4,13 +4,13 @@
 
 # Index
 
-1. [Arrays](Arrays)
-1. [Arrays](Arrays)
-1. [Maths](Maths)
-1. [Hashing](Hashing)
-1. [Linked List](Linked-List)
-1. [Linked List](Linked-List)
-1. [2-Pointer](2-Pointer)
+1. [Arrays](#Arrays)
+1. [Arrays](#Arrays)
+1. [Maths](#Maths)
+1. [Hashing](#Hashing)
+1. [Linked List](#Linked-List)
+1. [Linked List](#Linked-List)
+1. [2-Pointer](#2-Pointer)
 
 ## 1 Arrays
 
@@ -41,14 +41,22 @@
 
 1. [Two Sum](two_sum.cpp)
 1. [Four Sum](four_sum.cpp)
+1. [Longest Consecutive Sequence](longest_cons_seq.cpp)
+1. [Largest Subarray with 0 Sum](largest_subarray_with_0_sum.cpp)
 
 ## Linked List
 
 1. [Reverse a Linked List](reverse_linked_list.cpp)
+1. [Middle of the Linked List](middle_linked_list.cpp)
+1. [Remove Nth Node From End of List](remove_nth_node_from_end_of_linked_list.cpp)
+1. [Delete Node in a Linked List](delete_a_node_in_a_linked_list.cpp)
+1. [Merge Two Sorted Lists](merge_two_sorted_linked_list.cpp)
+1. [Add Two Numbers](add_two_numbers.cpp)
 
 ## Linked List
 
 1. [Intersection of Two Linked Lists](intersection_linked_list.cpp)
+1. [Detect Cycle in Linked List](linked_list_cycle.cpp)
 
 ## 2-Pointer
 
