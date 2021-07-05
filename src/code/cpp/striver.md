@@ -4,9 +4,13 @@
 
 # Index
 
-- [1 Arrays](#1-Arrays)
-- [2 Arrays](#2-Arrays)
-- [3 Maths](#3-Maths)
+1. [Arrays](Arrays)
+1. [Arrays](Arrays)
+1. [Maths](Maths)
+1. [Hashing](Hashing)
+1. [Linked List](Linked-List)
+1. [Linked List](Linked-List)
+1. [2-Pointer](2-Pointer)
 
 ## 1 Arrays
 
@@ -17,7 +21,7 @@
 1. [Merge Intervals](merge_intervals.cpp)
 1. [Find duplicate in an array of N+1 integers.](array_duplicates.cpp)
 
-## 2 Arrays
+## Arrays
 
 1. [Set matrix zeros](set_matrix_zeroes.cpp)
 1. [Pascal triangle](pascal_triangle.cpp)
@@ -26,9 +30,26 @@
 1. [Stock buy and sell](buy_sell_stocks.cpp)
 1. [Rotate matrix Anticlockwise](rotate_matrix_anti_90.cpp)
 
-## 3 Maths
+## Maths
 
 1. [Search a 2D Matrix](search_2d_matrix.cpp)
 1. [Pow(x, n)](pow.cpp)
 1. [Majority Element I](majority_element.cpp)
 1. [Majority Element II](majority_element_2.cpp)
+
+##  Hashing
+
+1. [Two Sum](two_sum.cpp)
+1. [Four Sum](four_sum.cpp)
+
+## Linked List
+
+1. [Reverse a Linked List](reverse_linked_list.cpp)
+
+## Linked List
+
+1. [Intersection of Two Linked Lists](intersection_linked_list.cpp)
+
+## 2-Pointer
+
+1. [Three Sum](three_sum.cpp)
