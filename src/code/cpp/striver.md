@@ -12,7 +12,7 @@
 1. [Linked List](#Linked-List)
 1. [2-Pointer](#2-Pointer)
 
-## 1 Arrays
+## Arrays
 
 1. [Sort an array of 0’s 1’s 2’s](012.cpp)
 1. [Find Missing And Repeating](find_missing_and_repeating.cpp)
