@@ -61,3 +61,9 @@
 ## 2-Pointer
 
 1. [Three Sum](three_sum.cpp)
+
+## String
+
+1. [Reverse Words in a String](reverse_string.cpp)
+1. [Implement atoi()](atoi.cpp)
+1. [Implement strStr()](strstr.cpp)
