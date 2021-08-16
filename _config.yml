@@ -23,9 +23,9 @@ title: Priyanshu Tiwari                          # the main title
 tagline: My experiments with competitive programming # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  Solving cp and sde sheets
+
+url: 'https://cp.ahampriyanshu.com'
 
 github:
   username: ahampriyanshu          # change to your github username
@@ -37,7 +37,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Priyanshu Tiwari
-  email: ahampriyanshu@domain.com             # change to your email address
+  email: ahampriyanshu@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username      # change to your twitter homepage
