@@ -7,7 +7,8 @@ tags: [striver, queue]
 math: true
 ---
 
-This post is to .....
+I will try to import all the previous work from ``cp_sheets`` into this project.
+So today we will solve something something <br>
 
 
 ## Problem 1
