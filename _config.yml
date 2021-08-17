@@ -19,11 +19,11 @@ timezone: Asia/Kolkata
 # ↓ --------------------------
 
 title: Priyanshu Tiwari                          # the main title
-
+author: Priyanshu Tiwari  
 tagline: My experiments with competitive programming # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Solving cp and sde sheets
+  Solving striver79, lovebabbar 450, project euler, hackerrank 30 days of code, a2oj ladders
 
 url: 'https://cp.ahampriyanshu.com'
 
@@ -39,11 +39,7 @@ social:
   name: Priyanshu Tiwari
   email: ahampriyanshu@gmail.com             # change to your email address
   links:
-    # The first element serves as the copyright owner's link
-    # - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    - https://github.com/username
     - https://www.linkedin.com/in/username
 
 google_site_verification: google_meta_tag_verification # change to your verification string
