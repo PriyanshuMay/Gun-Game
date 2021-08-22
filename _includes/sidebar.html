@@ -20,7 +20,7 @@
     </div>
 
     <div class="site-title mt-3">
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <a href="{{ '/' | relative_url }}">{{ site.author }}</a>
     </div>
     <div class="site-subtitle font-italic">{{ site.tagline }}</div>
 
@@ -54,9 +54,9 @@
     {% for entry in site.data.contact %}
       {% capture url %}
         {%- if entry.type == 'github' -%}
-          https://github.com/{{ site.github.username }}
-        {%- elsif entry.type == 'twitter' -%}
-          https://twitter.com/{{ site.twitter.username }}
+          https://github.com/ahampriyanshu
+        {%- elsif entry.type == 'linkedin' -%}
+          https://linkedin.com/in/ahampriyanshu
         {%- elsif entry.type == 'email' -%}
           {% assign email = site.social.email | split: '@' %}
           javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')

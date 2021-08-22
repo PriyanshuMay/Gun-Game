@@ -1,89 +1,44 @@
 # The Site Configuration
 
-# Import the theme
 theme: jekyll-theme-chirpy
 baseurl: ''
-lang: en
-
-# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Kolkata
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
-
-title: Priyanshu Tiwari                          # the main title
-author: Priyanshu Tiwari  
-tagline: My experiments with competitive programming # it will display as the sub-title
-
-description: >-                        # used by seo meta and the atom feed
-  Solving striver79, lovebabbar 450, project euler, hackerrank 30 days of code, a2oj ladders
-
 url: 'https://cp.ahampriyanshu.com'
-
-github:
-  username: ahampriyanshu          # change to your github username
-
-linkedin:
-  username: ahampriyanshu            # change to your twitter username
+lang: en
+timezone: Asia/Kolkata
+title: 'My Experiments With Competitive Programming'
+author: 'Priyanshu Tiwari'  
+tagline: 'my experiments with competitive programming'
+description: 'Experimenting with various competitive programming resources/lists on various platforms(mostly leetcode and codeforces)'                 
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Priyanshu Tiwari
-  email: ahampriyanshu@gmail.com             # change to your email address
+  name: 'Priyanshu Tiwari'
+  email: ahampriyanshu@gmail.com     
   links:
-    - https://github.com/username
-    - https://www.linkedin.com/in/username
-
-google_site_verification: google_meta_tag_verification # change to your verification string
-
-# ↑ --------------------------
-
+    - https://twitter.com/ahampriyanshu
+    - https://www.linkedin.com/in/ahampriyanshu
+    - https://github.com/ahampriyanshu
+    - https://www.instagram.com/ahampriyanshu
 
 google_analytics:
-  id: ''              # fill in your Google Analytics ID
-  # Google Analytics pageviews report settings
+  id: 'GTM-TZHF235'
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
     cache_path:       # the local PV cache data, friendly to visitors from GFW region
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
 theme_mode:   # [light|dark]
-
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
 img_cdn: ''
-
-# the avatar on sidebar, support local or CORS resources
 avatar: assets/img/logo.png
-
-# boolean type, the global switch for ToC in posts.
 toc: true
 
 disqus:
-  comments: false  # boolean type, the global switch for posts comments.
-  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  comments: true 
+  shortname: 'ahampriyanshu'   
 
-paginate: 10
-
-# ------------ The following options are not recommended to be modified ------------------
+paginate: 20
 
 kramdown:
   syntax_highlighter: rouge
-  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:
     css_class: highlight
     # default_lang: console
     span:
@@ -101,14 +56,12 @@ collections:
 defaults:
   -
     scope:
-      path: ''          # An empty string here means all files in the project
+      path: ''
       type: posts
     values:
       layout: post
-      comments: true    # Enable comments in posts.
-      toc: true         # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
+      comments: true
+      toc: true
       permalink: /posts/:title/
   -
     scope:
