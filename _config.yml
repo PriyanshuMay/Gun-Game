@@ -31,8 +31,8 @@ avatar: assets/img/logo.png
 toc: true
 
 disqus:
-  comments: true 
-  shortname: 'ahampriyanshu'   
+  comments: false 
+  shortname: ''   
 
 paginate: 20
 
