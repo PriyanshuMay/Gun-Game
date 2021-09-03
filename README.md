@@ -3,10 +3,11 @@
 
 ## Why
 
-I'm about to start my 5th sem and yet my dsa/cp is very nominal :cry:.
-I'm creating this repo/blog/website to get regular at cp, strenthen my dsa and try out in this domain for the next 10-12 months.So let see how this experiment goes :crossed_fingers:
+I'm about to start the third year of my graduation and still, I haven't focused on my data structures, programming fundamentals, algorithms, competitive programming, etc:cry:. In these past two years, I have given only 1 contest on leetcode , 9-10 on codeforces and 11-12 on codechef.
+So, I'm creating this repo/blog/website in the hope to get regular at cp and strengthen my dsa.
+I will be trying out this domain for the next 10-12 months. So let's see how this experiment goes :crossed_fingers:
 
-## Progess
+## Progress
 
 |  |  Codeforces | Leetcode | Codechef | Project Euler |
 |---|---|---|---|---|
@@ -23,11 +24,26 @@ I'm creating this repo/blog/website to get regular at cp, strenthen my dsa and t
 | Jul  |   |   |   |   |
 | Aug  |   |   |   |   |
 
+### Some important checkpoints
+
+#### By Nov, 2021
+
+* [] Complete all the basic data structures
+* [] Fundamental of C++
+* [] STL
+* [] Striver 180
+* [] Pupil at codeforces
+* [] 3* on Leetcode
+* [] 3* star at codechef
+* [] 50+ on project euler
+
+#### By Feb, 2022
+#### By May, 2022
+
 * This site is hosted on [GitHub Pages](https://pages.github.com/) with [Chirpy Theme](https://github.com/cotes2020/jekyll-theme-chirpy/)
 
 ## Some Links
 
 * [My portfolio](https://ahampriyanshu.com/)
-* [Experiments with competitive programming](https://cp.ahampriyanshu.com/)
 * [Hail CPP](https://cpp.ahampriyanshu.com/)
 * [Algo ds 101](https://dsa.ahampriyanshu.com/)
