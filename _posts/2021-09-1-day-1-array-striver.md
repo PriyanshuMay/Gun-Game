@@ -7,6 +7,7 @@ tags: [striver, array, kadane]
 ---
 
 
+
 ## Problem 1
 
 * [Find the duplicate in an array of N+1 integers.](https://leetcode.com/problems/find-the-duplicate-number/)
@@ -24,45 +25,7 @@ tags: [striver, array, kadane]
 * Space Complexity : **O(1)**
 
 ```cpp
-class Solution
-{
-public:
-    void sort012(int a[], int n)
-    {
-        int zeros = 0, ones = 0, twos = 0;
-        for (int i = 0; i < n; i++)
-        {
-            if (a[i] == 0)
-            {
-                zeros++;
-            }
-            else if (a[i] == 1)
-            {
-                ones++;
-            }
-            else
-            {
-                twos++;
-            }
-        }
-        int i = 0;
-        while (zeros > 0)
-        {
-            a[i++] = 0;
-            zeros--;
-        }
-        while (ones > 0)
-        {
-            a[i++] = 1;
-            ones--;
-        }
-        while (twos > 0)
-        {
-            a[i++] = 2;
-            twos--;
-        }
-    }
-};
+
 ```
 
 ### Optimal
@@ -361,6 +324,55 @@ public:
     int *findTwoElement(int *arr, int n) {
     
     
+    }
+};
+```
+
+## Problem 5
+
+* [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+
+### Brute
+
+* Use two loop and compare the sum of evey subarray.
+* Time Complexity : **O(n^2)**
+* Space Complexity : **O(n)**
+
+```cpp
+class Solution
+{
+public:
+    void maxProfit(vector<int>& prices)
+  {
+          for (int i = 0; i < prices.size() - 1; i++) {
+            for (int j = i + 1; j < prices.size(); j++) {
+                int profit = prices[j] - prices[i];
+                if (profit > maxprofit)
+                    maxprofit = profit;
+            }
+        }
+        return maxprofit;
+  }
+};
+```
+
+### Optimal
+
+* Use [Kadane Algorithm](https://cp-algorithms.com/others/maximum_average_segment.html)
+* Time Complexity : **O(n)**
+* Space Complexity : **O(1)**
+
+```cpp
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int buy = INT_MAX, n =  prices.size(), profit = 0;
+        for (auto price : prices)
+        {
+            if (price < buy) buy = price;
+            if (price - buy > profit) profit = price - buy;
+        }
+        return profit;
     }
 };
 ```

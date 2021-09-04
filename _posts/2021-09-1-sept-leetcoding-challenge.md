@@ -61,3 +61,7 @@ public:
     }
 };
 ```
+
+## 3 Sept | Erect the Fence
+
+* Really leetcode? this question in this challenge.

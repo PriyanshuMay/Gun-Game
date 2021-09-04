@@ -4,13 +4,12 @@ author: Priyashu Tiwari
 date: 2021-09-2 10:00:00 +0530
 categories: [striver]
 tags: [striver, array]
-math: true
 ---
 
 
 ## Problem 1
 
-* [Find the duplicate in an array of N+1 integers.](https://leetcode.com/problems/find-the-duplicate-number/)
+* [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 
 ### Brute
 
@@ -22,7 +21,7 @@ math: true
 * Time Complexity : **O(m*n)**
 * Space Complexity : **O(m+n)**
 
-```cp
+```cpp
 class Solution {
 public:
     
@@ -94,6 +93,36 @@ public:
             }
             if (zeroth_col) matrix[j][0] = 0;
         }
+    }
+};
+```
+
+## Problem 5
+
+* [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+### Brute
+
+* This question has been updated on leetcode with newer constraints : _-2^31 <= matrix[i][j] <= 2^31 - 1_. Hence, we will have to use some extra space.
+
+
+### Optimal 
+
+* In this approach, we will iterate over the array and store the minimun value & the maximum profit in seperate variables.
+* Time Complexity : **O(n)** 
+* Space Complexity : **O(1)**
+
+```cpp
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int buy = INT_MAX, n =  prices.size(), profit = 0;
+        for (auto price : prices)
+        {
+            if (price < buy) buy = price;
+            if (price - buy > profit) profit = price - buy;
+        }
+        return profit;
     }
 };
 ```

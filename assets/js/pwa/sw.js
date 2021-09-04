@@ -6,7 +6,8 @@ permalink: '/sw.js'
 
 self.importScripts('{{ "/assets/js/data/swcache.js" | relative_url }}');
 
-const cacheName = 'chirpy-{{ "now" | date: "%Y%m%d.%H%M" }}';
+const cacheName = 'cp-{{ "now" | date: "%Y%m%d.%H%M" }}';
+const offlinePage = '/offline/';
 
 function verifyDomain(url) {
   for (const domain of allowedDomains) {
@@ -28,60 +29,73 @@ function isExcluded(url) {
   return false;
 }
 
-self.addEventListener('install', e => {
-  self.skipWaiting();
-  e.waitUntil(
-    caches.open(cacheName).then(cache => {
-      return cache.addAll(resource);
+// Delete caches that do not match the current version of the service worker.
+function clearOldCaches() {
+  return caches.keys().then(keys => {
+    return Promise.all(
+      keys
+        .filter(key => key.indexOf(offlineCache) !== 0)
+        .map(key => caches.delete(key))
+    );
+  });
+}
+
+// Precache specific pages
+function cacheOfflinePage() {
+  return caches.open(offlineCache)
+    .then(cache => {
+      return cache.addAll([offlinePage, resource]);
     })
+    .catch(error => console.log(error))
+}
+
+// Install the service worker
+ self.addEventListener('install', event => {
+  event.waitUntil(
+    cacheOfflinePage()
+    .then( () => self.skipWaiting() )
   );
 });
 
+// Activate the service worker
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    clearOldCaches()
+      .then(() => self.clients.claim())
+  );
+});
+
+// Try and serve up cached page, or else show networked page, or else show offline page
+
 self.addEventListener('fetch', event => {
+  let request = event.request;
+
   event.respondWith(
-    caches.match(event.request)
+    caches.match(request)
       .then(response => {
-        if (response) {
-          return response;
-        }
+      return response || fetch(request)
+        .then( response => {
+          // NETWORK
 
-        return fetch(event.request)
-          .then(response => {
-            const url = event.request.url;
-
-            if (event.request.method !== 'GET' ||
+          if (event.request.method !== 'GET' ||
               !verifyDomain(url) ||
               isExcluded(url)) {
               return response;
             }
 
-            /*
-              see: <https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests>
-             */
-            let responseToCache = response.clone();
-
-            caches.open(cacheName)
-              .then(cache => {
-                /* console.log('[sw] Caching new resource: ' + event.request.url); */
-                cache.put(event.request, responseToCache);
-              });
-
+          if (response && response.ok) {
+            let copy = response.clone();
+            caches.open(offlineCache)
+              .then( cache => cache.put(request, copy) );
+          }
             return response;
-          });
-      })
-    );
-});
-
-self.addEventListener('activate', e => {
-  e.waitUntil(
-    caches.keys().then(keyList => {
-          return Promise.all(
-            keyList.map(key => {
-              if(key !== cacheName) {
-                return caches.delete(key);
-              }
-            })
-          );
+        })
+      .catch( error => {
+        // OFFLINE
+        if (request.mode == 'navigate') {
+          return caches.match(offlinePage);
+        } 
+      });
     })
   );
 });
