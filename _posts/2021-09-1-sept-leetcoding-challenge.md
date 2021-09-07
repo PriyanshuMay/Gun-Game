@@ -65,3 +65,28 @@ public:
 ## 3 Sept | Erect the Fence
 
 * Really leetcode? this question in this challenge.
+
+## 4 Sept | Erect the Fence
+
+* Two in a row !.
+
+## 7 Sept | Reverse Linked List
+
+* Just use two temp variables, one to store the prev node and another store the current node.
+
+```cpp
+class Solution {
+public:
+    ListNode* reverseList(ListNode* next) {
+        ListNode* prev = NULL;
+        while(next != NULL)
+        {
+            ListNode* curr = next;
+            next = next->next;
+            curr->next = prev;
+            prev = curr;
+        }
+        return prev;
+    }
+};
+```
