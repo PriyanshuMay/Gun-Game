@@ -1,7 +1,7 @@
 ---
-title: "Day  |  | Striver"
+title: "Day 5 | Linked List | Striver"
 author: Priyashu Tiwari
-date: 2021-09- 10:00:00 +0530
+date: 2021-09-05 10:00:00 +0530
 categories: [striver]
 tags: [striver,]
 ---

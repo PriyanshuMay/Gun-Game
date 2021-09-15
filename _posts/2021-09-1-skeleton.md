@@ -1,9 +1,9 @@
 ---
-title: "Day  |  | Striver"
+title: "Title  | SubTitle | Category"
 author: Priyashu Tiwari
-date: 2021-09- 10:00:00 +0530
-categories: [striver]
-tags: [striver,]
+date: 2021-09-01 10:00:00 +0530
+categories: [Misc]
+tags: [skeleton]
 ---
 
 
